@@ -1,0 +1,22 @@
+$white: #fff;
+div {
+  position: relative;
+  .day {
+    color: $white;
+    font-family: "Russo One";
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute;
+    top: 114px;
+    left: 342px;
+  }
+  .time {
+    color: $white;
+    font-family: "Russo One";
+    font-size: 48px;
+    font-weight: 400;
+    position: absolute;
+    top: 131px;
+    left: 210px;
+  }
+}

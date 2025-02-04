@@ -1,0 +1,85 @@
+$green: #20eeb0;
+form {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  margin-top: 36px;
+  input {
+    width: 275px;
+    height: 49px;
+    border-radius: 5px;
+    background: #ebeff2;
+    border: none;
+    padding-left: 48px;
+    color: #0d0d0d;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  input::placeholder {
+    color: #888;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  button {
+    width: 88px;
+    height: 49px;
+    border-radius: 5px;
+    background-color: $green;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+  }
+  .doneimg {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+  }
+}
+.eachtaskdiv {
+  width: 373px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .trash {
+    margin-left: 14px;
+    cursor: pointer;
+  }
+  .circle {
+    cursor: pointer;
+  }
+}
+.alltasks {
+  height: 300px;
+  overflow-y: auto;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .task1 {
+    color: #0d0d0d;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .date1 {
+    color: #888;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.dissapear {
+  display: none;
+}
