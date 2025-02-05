@@ -1,4 +1,6 @@
 $green: #20eeb0;
+$dark: #0d0d0d;
+$grey: #888;
 form {
   display: flex;
   gap: 10px;
@@ -11,7 +13,7 @@ form {
     background: #ebeff2;
     border: none;
     padding-left: 48px;
-    color: #0d0d0d;
+    color: $dark;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -19,7 +21,8 @@ form {
     line-height: normal;
   }
   input::placeholder {
-    color: #888;
+    color: $grey;
+
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
@@ -64,20 +67,16 @@ form {
   flex-direction: column;
   gap: 24px;
   .task1 {
-    color: #0d0d0d;
+    color: $dark;
     font-family: Inter;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
   }
   .date1 {
-    color: #888;
+    color: $grey;
     font-family: Inter;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
   }
 }
 .dissapear {

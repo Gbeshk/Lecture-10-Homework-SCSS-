@@ -49,18 +49,35 @@ function Input() {
       })
     );
   }
+  let date = new Date();
 
+  let ppdate = new Date();
+  ppdate.setMinutes(0);
+  ppdate.setSeconds(0);
+  ppdate.setMilliseconds(0);
+  let pp = `Today at ${date.getHours() % 12 || 12}:${String(
+    date.getMinutes()
+  ).padStart(2, "0")} ${date.getHours() >= 12 ? "PM" : "AM"}`;
   return (
     <>
       <form
         onSubmit={(e) => {
           e.preventDefault();
           if (task.trim()) {
+            let date = new Date();
+
+            let ppdate = new Date();
+            ppdate.setMinutes(0);
+            ppdate.setSeconds(0);
+            ppdate.setMilliseconds(0);
+            let pp = `Today at ${date.getHours() % 12 || 12}:${String(
+              date.getMinutes()
+            ).padStart(2, "0")} ${date.getHours() >= 12 ? "PM" : "AM"}`;
             const newtask = {
               id: tasksarray.length,
               name: task,
               done: false,
-              time: new Date().toLocaleString(),
+              time: pp,
               delete: false,
             };
             setTasksarray([...tasksarray, newtask]);
